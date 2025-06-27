@@ -1,1 +1,18 @@
-hi
+function makeLine(size) {
+    let row = ''
+    for (let i = 0; i < size; i++) {
+        row += '#';
+    }
+    return row;
+}
+
+function makeSquare(size) {
+    let square = ''
+    for (let i = 0; i < size; i++) {
+        square += makeLine(i) + '\n';
+    }
+      return square;
+    
+
+}
+console.log(makeSquare(5))
